@@ -37,6 +37,7 @@ onMounted(async () => {
       objectCaching: false,
       left: (canvas.width - img.width * scaleX) / 2,
       top: 50,
+      selectable : false,
     });
     canvas.add(img);
       // 下移
@@ -56,6 +57,7 @@ onMounted(async () => {
       left: (canvas.width) / 2,
       top: 170,
       originX: 'center',
+      selectable : false,
     });
 
     canvas.add(img);
@@ -70,6 +72,7 @@ onMounted(async () => {
     fontSize: 14,
     textAlign: 'center', // 设置文本居中对齐
     originX: 'center', // 设置originX为'center'以使文本以水平中心点为基准
+    selectable : false,
   });
 
   canvas.add(text);
@@ -94,6 +97,7 @@ onMounted(async () => {
       objectCaching: false,
       left: (canvas.width - qrImg.width * scaleX) / 2,
       top: 174,
+      selectable : false,
     });
 
     canvas.add(qrImg);
